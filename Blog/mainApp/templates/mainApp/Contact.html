@@ -1,0 +1,15 @@
+{% extends "mainApp/wrapper.html" %}
+{% block content %}
+  {% for val in values %}
+  <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Контакты!</h1>
+        <p>{{val}}</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+      <hr>
+
+  {% endfor %}
+{% endblock %}

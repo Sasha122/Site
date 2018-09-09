@@ -1,0 +1,10 @@
+{% extends "news/wrapper.html" %}
+
+{% block content %}
+<div class="jumbotron">
+  <h2 class="text-info dislplay-3">{{articles.title}}</h2>
+  <h6 class="text-info"> Опубликовано: {{articles.date|date:"Y-m-D"}}</h6>
+  <p class="lead">{{articles.post|safe|linebreaks}}</p>
+</div>
+
+{% endblock %}
